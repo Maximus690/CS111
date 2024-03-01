@@ -61,9 +61,6 @@ class Sand:
         self.grid.set(self.x, self.y, self)
 
 
-if __name__ == "__main__":
-    pass
-
 
 all_sand = []
 
@@ -118,7 +115,7 @@ def do_whole_grid():
     all_sand.sort(key=lambda particle: (-particle.y, particle.x))
     """Write your code here"""
     for sand_particle in all_sand:
-        sand_particle.move(Sand.gravity)
+        sand_particle.move(sand_particle.gravity)
 
 #########################################################
 """
